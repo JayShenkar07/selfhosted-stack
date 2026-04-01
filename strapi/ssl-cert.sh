@@ -41,8 +41,8 @@ cat >/etc/apache2/sites-available/${DOMAIN}.conf <<EOL
 
     # Proxy settings for ${DOMAIN}
     ProxyPreserveHost On
-    ProxyPass / http://localhost:8080/
-    ProxyPassReverse / http://localhost:8080/
+    ProxyPass / http://localhost:1337/
+    ProxyPassReverse / http://localhost:1337/
 
     # Proxy headers
     RequestHeader set X-Forwarded-Proto "https"
